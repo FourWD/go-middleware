@@ -1,18 +1,15 @@
 package common
 
 import (
-	"os"
-
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
 
 var Database *gorm.DB
 
-func ConnectDatabase() error {
+func ConnectDatabase(dsn string) error {
 	var err error
 
-	dsn := os.Getenv("MYSQL_DNS")
 	Database, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
 		SkipDefaultTransaction: true,
 		PrepareStmt:            true,
