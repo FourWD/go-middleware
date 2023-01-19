@@ -30,22 +30,22 @@ type Vehicle struct {
 	Mileage           int       `db:"mileage" json:"mileage" gorm:"type:int(11) "`
 	LicensePlate      string    `db:"license_plate" json:"license_plate" gorm:"type:varchar(50) ; dafault:null "`
 	LicenseProvinceID string    `db:"license_province_id" json:"license_province_id" gorm:"type:varchar(36) "`
-	ImgStrFront       string    `db:"img_str_front" json:"img_str_front" gorm:"type:varchar(50) ; dafault:null "`
-	ImgStrBack        string    `db:"img_str_back" json:"img_str_back" gorm:"type:varchar(50) ; dafault:null "`
-	ImgStrRight       string    `db:"img_str_right" json:"img_str_right" gorm:"type:varchar(50) ; dafault:null "`
-	ImgStrLeft        string    `db:"img_str_left" json:"img_str_left" gorm:"type:varchar(50) ; dafault:null "`
-	ImgFrontLeft_45   string    `db:"img_front_left_45" json:"img_front_left_45" gorm:"type:varchar(50) ; dafault:null "`
-	ImgFrontRight_45  string    `db:"img_front_right_45" json:"img_front_right_45" gorm:"type:varchar(50) ; dafault:null "`
-	ImgBackLeft_45    string    `db:"img_back_left_45" json:"img_back_left_45" gorm:"type:varchar(50) ; dafault:null "`
-	ImgBackRight_45   string    `db:"img_back_right_45" json:"img_back_right_45" gorm:"type:varchar(50) ; dafault:null "`
-	ImgInBront        string    `db:"img_in_front" json:"img_in_front" gorm:"type:varchar(50) ; dafault:null "`
-	ImgInBack         string    `db:"img_in_back" json:"img_in_back" gorm:"type:varchar(50) ; dafault:null "`
-	ImgConsole        string    `db:"img_console" json:"img_console" gorm:"type:varchar(50) ; dafault:null "`
-	ImgMileage        string    `db:"img_mileage" json:"img_mileage" gorm:"type:varchar(50) ; dafault:null "`
-	ImgVehTools       string    `db:"img_veh_tools" json:"img_veh_tools" gorm:"type:varchar(50) ; dafault:null "`
-	ImgSpareWheel     string    `db:"img_spare_wheel" json:"img_spare_wheel" gorm:"type:varchar(50) ; dafault:null "`
-	ImgEngineRoom     string    `db:"img_engine_room" json:"img_engine_room" gorm:"type:varchar(50) ; dafault:null "`
-	ImgOut360         string    `db:"img_out_360" json:"img_out_360" gorm:"type:varchar(50) ; dafault:null "`
+	ImgStrFront       string    `db:"img_str_front" json:"img_str_front" gorm:"type:varchar(100) ; dafault:null "`
+	ImgStrBack        string    `db:"img_str_back" json:"img_str_back" gorm:"type:varchar(100) ; dafault:null "`
+	ImgStrRight       string    `db:"img_str_right" json:"img_str_right" gorm:"type:varchar(100) ; dafault:null "`
+	ImgStrLeft        string    `db:"img_str_left" json:"img_str_left" gorm:"type:varchar(100) ; dafault:null "`
+	ImgFrontLeft_45   string    `db:"img_front_left_45" json:"img_front_left_45" gorm:"type:varchar(100) ; dafault:null "`
+	ImgFrontRight_45  string    `db:"img_front_right_45" json:"img_front_right_45" gorm:"type:varchar(100) ; dafault:null "`
+	ImgBackLeft_45    string    `db:"img_back_left_45" json:"img_back_left_45" gorm:"type:varchar(100) ; dafault:null "`
+	ImgBackRight_45   string    `db:"img_back_right_45" json:"img_back_right_45" gorm:"type:varchar(100) ; dafault:null "`
+	ImgInBront        string    `db:"img_in_front" json:"img_in_front" gorm:"type:varchar(100) ; dafault:null "`
+	ImgInBack         string    `db:"img_in_back" json:"img_in_back" gorm:"type:varchar(100) ; dafault:null "`
+	ImgConsole        string    `db:"img_console" json:"img_console" gorm:"type:varchar(100) ; dafault:null "`
+	ImgMileage        string    `db:"img_mileage" json:"img_mileage" gorm:"type:varchar(100) ; dafault:null "`
+	ImgVehTools       string    `db:"img_veh_tools" json:"img_veh_tools" gorm:"type:varchar(100) ; dafault:null "`
+	ImgSpareWheel     string    `db:"img_spare_wheel" json:"img_spare_wheel" gorm:"type:varchar(100) ; dafault:null "`
+	ImgEngineRoom     string    `db:"img_engine_room" json:"img_engine_room" gorm:"type:varchar(100) ; dafault:null "`
+	ImgOut360         string    `db:"img_out_360" json:"img_out_360" gorm:"type:varchar(100) ; dafault:null "`
 	Price             int       `db:"price" json:"price" gorm:"type:int(11);  "`
 	Url               string    `db:"url"  json:"url" gorm:"dafault:null;type:varchar(100)"`
 	OnShelf           bool      `db:"on_shelf"  json:"on_shelf" gorm:"type:tinyint(1)"`
