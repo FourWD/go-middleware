@@ -7,5 +7,5 @@ type Amphor struct {
 	Name       string ` db:"name" json:"name" gorm:"type:varchar(150);" `
 	NameEn     string ` db:"name_en" json:"name_en" gorm:"type:varchar(100);" `
 	ProvinceID string ` db:"province_id" json:"province_id" gorm:"type:varchar(36);index;" `
-	Test       string ` db:"test" json:"test" gorm:"type:varchar(36);" `
+	ATest      string ` db:"test" json:"test" gorm:"type:varchar(36);" `
 }
