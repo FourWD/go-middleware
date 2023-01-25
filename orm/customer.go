@@ -1,6 +1,6 @@
 package orm
 
-type CUstomer struct {
+type Customer struct {
 	ID string `db:"id" json:"id" gorm:"type:varchar(36); primaryKey"`
 	GormModel
 
