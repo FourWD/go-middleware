@@ -14,7 +14,5 @@ type Branch struct {
 	Image    string ` db:"image" json:"image" gorm:"type:text" `
 	Lat      int    ` db:"lat" json:"lat" gorm:"type:decimal(11,7)" `
 	Long     int    ` db:"long" json:"long" gorm:"type:decimal(11,7)" `
-	// BranchInit     string ` db:"branch_init" json:"branch_init" gorm:"type:varchar(45);" `
-	// HighlightColor string ` db:"highlight_color" json:"highlight_color" gorm:"type:varchar(10);" `
-	RowOrder int ` db:"row_order" json:"row_order" gorm:"type:int(11);index" `
+	RowOrder int    ` db:"row_order" json:"row_order" gorm:"type:int(11);index" `
 }

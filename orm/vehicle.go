@@ -50,4 +50,5 @@ type Vehicle struct {
 	Url               string    `db:"url"  json:"url" gorm:"dafault:null;type:varchar(100)"`
 	OnShelf           bool      `db:"on_shelf"  json:"on_shelf" gorm:"type:tinyint(1)"`
 	OnShelfDate       time.Time `db:"on_shelf_date"  json:"on_shelf_date" gorm:"type:datetime"`
+	Iview             int       `db:"iview" json:"iview" gorm:"type:int(11);  "`
 }
