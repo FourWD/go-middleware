@@ -8,6 +8,7 @@ type Branch struct {
 
 	Name     string  ` db:"name" json:"name" gorm:"type:varchar(100);index" `
 	Address  string  ` db:"address" json:"address" gorm:"type:varchar(250);" `
+	Zipcode  string  ` db:"zipcode" json:"zipcode" gorm:"type:varchar(6);" `
 	Phone    string  ` db:"phone" json:"phone" gorm:"type:varchar(100);" `
 	WorkHour string  ` db:"work_hour" json:"work_hour" gorm:"type:varchar(200);" `
 	Email    string  ` db:"email" json:"email" gorm:"type:varchar(100);" `
