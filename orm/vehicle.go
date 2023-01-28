@@ -48,7 +48,7 @@ type Vehicle struct {
 	ImgOut360         string    `db:"img_out_360" json:"img_out_360" gorm:"type:varchar(100) ; dafault:null "`
 	Price             int       `db:"price" json:"price" gorm:"type:int(11);  "`
 	Url               string    `db:"url"  json:"url" gorm:"dafault:null;type:varchar(100)"`
-	OnShelf           bool      `db:"on_shelf"  json:"on_shelf" gorm:"type:tinyint(1)"`
+	OnShelf           int       `db:"on_shelf"  json:"on_shelf" gorm:"type:tinyint(1)"`
 	OnShelfDate       time.Time `db:"on_shelf_date"  json:"on_shelf_date" gorm:"type:datetime"`
 	Iview             int       `db:"iview" json:"iview" gorm:"type:int(11);  "`
 }
