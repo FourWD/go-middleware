@@ -4,8 +4,9 @@ type VehicleImage struct {
 	ID string `db:"id" json:"id" gorm:"type:varchar(36);primary_key;"`
 	GormModel
 
-	Name                string `db:"name"  json:"name" gorm:"not null;type:varchar(50)"`
-	Image               string `db:"Image"  json:"Image" gorm:"type:varchar(100)"`
-	RowOrder            string `db:"row_order"  json:"row_order" gorm:"type:varchar(100)"`
 	VehicleImageGroupID string `db:"vehicle_image_group_id"  json:"vehicle_image_group_id" gorm:"type:varchar(36)"`
+	VehicleID           string `db:"vehicle_id"  json:"vehicle_id" gorm:"not null; type:varchar(50)"`
+	ImagePath           string `db:"image_path"  json:"image_path" gorm:"dafault:null; type:varchar(100)"`
+	Description         string `db:"description"  json:"description" gorm:"dafault:null; type:varchar(100)"`
+	RowOrder            string `db:"row_order"  json:"row_order" gorm:"type:varchar(100)"`
 }

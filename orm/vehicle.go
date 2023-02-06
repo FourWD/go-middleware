@@ -20,7 +20,6 @@ type Vehicle struct {
 	VehicleModelID    string    `db:"vehicle_model_id" json:"vehicle_model_id" gorm:"type:varchar(36);"`
 	VehicleSubmodelID string    `db:"vehicle_submodel_id" json:"vehicle_submodel_id" gorm:"type:varchar(36); "`
 	BranchID          string    `db:"branch_id" json:"branch_id" gorm:"type:varchar(36); "`
-	ColorID           string    `db:"color_id" json:"color_id" gorm:"type:varchar(36);"`
 	Mileage           int       `db:"mileage" json:"mileage" gorm:"type:int(11) "`
 	LicensePlate      string    `db:"license_plate" json:"license_plate" gorm:"type:varchar(50) ; dafault:null "`
 	LicenseProvinceID string    `db:"license_province_id" json:"license_province_id" gorm:"type:varchar(36) "`
