@@ -8,5 +8,6 @@ type VehicleImage struct {
 	VehicleID           string `db:"vehicle_id"  json:"vehicle_id" gorm:"not null; type:varchar(50)"`
 	ImagePath           string `db:"image_path"  json:"image_path" gorm:"dafault:null; type:varchar(100)"`
 	Description         string `db:"description"  json:"description" gorm:"dafault:null; type:varchar(100)"`
+	IsMain              bool   `db:"is_main"  json:"is_main" gorm:"type:tinyint(1)"`
 	RowOrder            string `db:"row_order"  json:"row_order" gorm:"type:varchar(100)"`
 }
